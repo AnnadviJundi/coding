@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANDUAN DASAR PEMROGRAMAN</title>
+</head>
+<body>
+    
+    <header style="text-align: center;">
+        <img src="html.jpg" alt="gambar html" width="800" height="300">
+        <h1>PANDUAN DASAR PEMROGRAMAN</h1>
+    </header>
+
+    <hr>
+    <nav style="text-align: center;">
+        <a href="index.html" style="margin-right: 20px;">Home</a>
+        <a href="htmltag.html"  style="margin-right: 20px; ;">Html Tag</a>
+        <a href="css.html" style="margin-right: 20px;">CSS</a>
+        <a href="contact.html">Contact us</a>
+    </nav>
+
+    <div>
+        <h2>Formulir Pendaftaran Kelas Online Pemrograman Dasar</h2>
+        <fieldset>
+            <legend>Data Pendaftaran</legend>
+            <form action="/daftar.php" target="_blank" method="get">
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" required><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="telepon">Nomor Telepon:</label><br>
+                    <input type="tel" id="telepon" name="telepon" required><br>
+
+                    <label for="tanggal">Tanggal Lahir:</label><br>
+                    <input type="date" id="tanggal" name="tanggal" required><br>
+
+                    <label for="gender">Jenis Kelamin</label><br>
+                    <input type="radio" id="laki-laki" name="gender" value="Laki-laki">
+                        <label for="laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                        <label for="perempuan">Perempuan</label><br>
+
+                    <label>Bahasa Pemrograman yang Diminati:</label><br>
+                    <input type="checkbox" id="java" name="bahasa" value="Java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" id="python" name="bahasa" value="Python">
+                    <label for="python">Python</label>
+                    <input type="checkbox" id="javascript" name="bahasa" value="JavaScript">
+                    <label for="javascript">JavaScript</label><br>
+
+                    <label for="paket">Pilih Paket Kelas:</label><br>
+                    <select id="paket" name="paket" required>
+                        <option value="">Pilih Paket</option>
+                        <option value="basic">Basic (1 Bulan)</option>
+                        <option value="intermediate">Intermediate (3 Bulan)</option>
+                        <option value="advanced">Advanced (6 Bulan)</option>
+                    </select><br>
+
+                    <label for="dokumen">Upload Identitas (KTP/Kartu Pelajar):</label><br>
+                    <input type="file" id="dokumen" name="dokumen" required><br>
+
+                    <label for="pesan">Pesan Tambahan:</label><br>
+                    <textarea id="pesan" name="pesan" rows="4"></textarea><br>
+  
+                    <button type="button" onclick="alert('Data Tersimpan, Silahkan tunggu beberapa saat')">Daftar Sekarang</button>
+
+            </form>
+        </fieldset>
+    </div>
+
+    <footer style="text-align: center; margin-top: 20px; padding: 10px;">
+        <h3>Hubungi Kami</h3>
+        <p>Email: info@htmlpanduan.com</p>
+        <p>Alamat: Sumobito, Jombang</p>
+    </footer>
+</body>
+</html>
